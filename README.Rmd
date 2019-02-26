@@ -81,12 +81,93 @@ O *Docker* se propõe a utilizar o próprio kernel do sistema operacional para e
 
 Os pricipais conceitos do docker são:
 
-* **Imagens**
-* ***Containers***
-* **Volumes**
+* **Imagens**: instruções de como construir os containers
+* ***Containers***: as "máquinas virtuais" já construídas a partir dos containers
+* **Volumes**: pastas no computador hospedeiro que o container irá utilizar para armazenar arquivos permanentemente
 
 ---
 
-## Imagens
+# Imagens
 
-São as *plantas* que serão utilizadas para construir os *containers*
+São as "plantas" que serão utilizadas para construir os *containers*
+
+---
+
+São contruídas a partir de outras imagens que estão disponíveis no repositório público do Docker (entitulado [Docker Hub](http://hub.docker.com))
+
+---
+
+## Imagens de sistemas operacionais "puros"
+
+![](img/hub-os.png)
+
+---
+
+## Imagens de sistemas operacionais com linguagens pré-instaladas
+
+![](img/hub-languages.png)
+
+---
+
+## Imagens de sistemas operacionais com bancos de dados pré-instalados
+
+![](img/hub-db.png)
+
+---
+
+Ex: Se eu quiser construir uma imagem para um continer Linux que irá fazer *webscrapping* utilizando Celery eu posso criar a imagem:
+
+* A partir da imagem de um Linux puro (Alpine, Ubuntu etc)
+* A partir da imagem oficial do Python (que por sua vez foi criada a partir da imagem de um Linux puro)
+* A partir de uma imagem que já tenha Celery instalado e configurado
+
+---
+
+Trechos do `Dockerfile` do *MysQL*
+
+---
+
+```bash
+# Usando outra imagem como ponto de partida
+FROM debian:stretch-slim # ...
+# Executando comandos para instalar pacotes
+RUN apt-get update && # ...
+# Definindo variáveis de ambiente
+ENV GOSU_VERSION 1.7 # ...
+# Expondo uma das pastas para o hospedeiro
+VOLUME /var/lib/mysql # ...
+# Copiando arquivos para a imagem
+COPY config/ /etc/mysql/ # ...
+# Expondo a porta 3306 para o hospedeiro
+EXPOSE 3306 33060 # ...
+# Executando o deamon do MySQL
+CMD ["mysqld"]
+```
+Fonte: [MySQL Docker File](https://github.com/docker-library/mysql/blob/a7a737f1eb44db467c85c8229df9d886dd63460e/8.0/Dockerfile)
+
+---
+
+Esses comandos serão executados toda vez que um novo container de MySQL for construído.
+
+---
+
+Observações importante: **o sistema de arquivo dos *containers* é volátil!**
+
+(Isso ficará mais claro quando falarmos sobre volumes)
+
+# *Containers*
+
+*Containers* são instâncias de imagens.
+
+---
+
+* Um *container* é gerado a partir de uma imagem
+* Um hospedeiro pode executar vários *containers* simultaneamente
+
+---
+
+Analogia: a imagem é o molde e os *containers* são os objetos criados a partir desse molde
+
+---
+
+TODO: colocar print de vários containers rodando (meu blog)
