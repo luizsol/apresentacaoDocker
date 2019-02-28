@@ -39,7 +39,7 @@ O *setup* da pessoa $B$ é:
 
 ---
 
-E uma vez que o código for aprovado ele deverá ser colocado no servidor de produção (máquina que irá rodar de fato a aplicação) $C$.
+E uma vez que o código for aprovado ele deverá ser colocado no servidor de produção $C$ (máquina que irá rodar de fato a aplicação).
 
 ---
 
@@ -53,15 +53,23 @@ O *setup* do servidor $C$ é:
 
 ---
 
+O Pesquisador $D$ está tentando comparar a diferença de performance entre duas versões diferentes da JVM (Java), mas não quer ter que desinstalar e instalar cada versão para cada teste que precisar realizar.
+
+---
+
 E agora José?
+
+---
+
+Temos um problema de reproducibilidade e isolamento de ambientes de execução.
 
 # Possíveis soluções:
 
-* **Solução 1**: Obrigar todo mundo a usar os mesmos softwares que estão no servidor de produção
+* **Solução 1**: Obrigar todos a utilizarem os mesmos softwares que estão no servidor de produção
 * **Problemas da solução 1**:
-  * Servidores tendem a utilizar versões antigas e estáveis, o que pode atrapalhar os pesquisadores
+  * Servidores tendem a utilizar versões antigas e estáveis de software, o que pode atrapalhar os pesquisadores
   * Nem sempre é possível usar para desenvolvimento o que se usa em produção (licenças, interface com o usuário, demanda computacional etc)
-  * Restringir pesquisadores e desenvolvedores pode implicar a fuga de capital humano qualificado
+  * Restringir pesquisadores e desenvolvedores pode resultar na fuga de capital humano qualificado
   
 ---
 
@@ -73,18 +81,22 @@ E agora José?
   
 # **Docker** ao resgate
 
-O *Docker* se propõe a utilizar o próprio kernel do sistema operacional para executar as aplicações das máquinas virtualizadas.
+O *Docker* tenta solucionar este problema criando "máquinas virtuais" compactas, flexíveis e reutilizáveis.
+
+---
+
+O *Docker* utiliza o próprio *kernel* (a "base") do sistema operacional para executar as aplicações das máquinas virtualizadas.
 
 ![](img/vmvsdocker.jpg)
 
 ---
 
-Os pricipais conceitos do docker são:
+Os pricipais conceitos do *Docker* são:
 
 * **Imagens**: instruções de como construir os containers
 * ***Containers***: as "máquinas virtuais" já construídas a partir dos containers
 * **Volumes**: pastas no computador hospedeiro que o container irá utilizar para armazenar arquivos permanentemente
-
+* **Redes**: as sub-redes das quais os containers farão parte
 ---
 
 # Imagens
@@ -123,7 +135,7 @@ Ex: Se eu quiser construir uma imagem para um continer Linux que irá fazer *web
 
 ---
 
-Trechos do `Dockerfile` do *MysQL*
+Trechos do `Dockerfile` do *MySQL*
 
 ---
 
@@ -143,6 +155,7 @@ EXPOSE 3306 33060 # ...
 # Executando o deamon do MySQL
 CMD ["mysqld"]
 ```
+
 Fonte: [MySQL Docker File](https://github.com/docker-library/mysql/blob/a7a737f1eb44db467c85c8229df9d886dd63460e/8.0/Dockerfile)
 
 ---
@@ -170,4 +183,8 @@ Analogia: a imagem é o molde e os *containers* são os objetos criados a partir
 
 ---
 
-TODO: colocar print de vários containers rodando (meu blog)
+![](img/containers.jpg)
+
+---
+
+teste
