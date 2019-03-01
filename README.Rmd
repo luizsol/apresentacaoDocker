@@ -45,7 +45,7 @@ E uma vez que o código for aprovado ele deverá ser colocado no servidor de pro
 
 O *setup* do servidor $C$ é:
 
-* RHEL 7.6 (Red Hat Linux) 
+* RHEL 7.6 (Red Hat Linux)
 * Python 3.6
 * Cassandra 3.11 (Banco de Dados)
 * TensorFlow 0.7
@@ -70,7 +70,7 @@ Temos um problema de reproducibilidade e isolamento de ambientes de execução.
   * Servidores tendem a utilizar versões antigas e estáveis de software, o que pode atrapalhar os pesquisadores
   * Nem sempre é possível usar para desenvolvimento o que se usa em produção (licenças, interface com o usuário, demanda computacional etc)
   * Restringir pesquisadores e desenvolvedores pode resultar na fuga de capital humano qualificado
-  
+
 ---
 
 * **Solução 2**: Utilizar *máquinas* virtuais que espelhem o setup de produção
@@ -78,7 +78,7 @@ Temos um problema de reproducibilidade e isolamento de ambientes de execução.
   * Máquinas virtuais são grandes (~10GB) e consomem bastante memória (~6GB) por si só
   * Versionamento (controle de versões) de máquinas virtuais não é uma tarefa simples (arquivos binários)
   * A interação entre a máquina hopedeira e a máquina hóspede (máquina virtualizada) nem sempre é simples (arquivos, rede, *clipboard* etc)
-  
+
 # **Docker** ao resgate
 
 O *Docker* tenta solucionar este problema criando "máquinas virtuais" compactas, flexíveis e reutilizáveis.
@@ -97,6 +97,7 @@ Os pricipais conceitos do *Docker* são:
 * ***Containers***: as "máquinas virtuais" já construídas a partir dos containers
 * **Volumes**: pastas no computador hospedeiro que o container irá utilizar para armazenar arquivos permanentemente
 * **Redes**: as sub-redes das quais os containers farão parte
+
 ---
 
 # Imagens
@@ -180,6 +181,74 @@ Observações importante: **o sistema de arquivo dos *containers* é volátil!**
 ---
 
 Analogia: a imagem é o molde e os *containers* são os objetos criados a partir desse molde
+
+
+# Volumes
+
+Lembram-se que o sistemas de arquivos das *imagens* são efêmeros?
+
+---
+
+Vamos fazer um teste.
+
+---
+
+Vamos criar uma instância (*container*) a partir da imagem oficial do *Ubuntu*:
+
+![](img/1.png)
+
+---
+
+Agora que o *container* está rodando vamos acessar o container, criar um arquivo o arquivo `/root/file.txt` e depois parar o container.
+
+![](img/2.png)
+
+---
+
+Reiniciando o *container*, acessando-o e procurando pelo arquivo temos uma surpresa:
+
+![](img/3.png)
+
+---
+
+Os containers são como arquivos binários de programas que não podem ser modificados permanentemente.
+
+---
+
+E agora? Vamos ter que deixar nosso container de banco de dados rodando eternamente para não perder os dados?
+
+
+---
+
+Não.
+
+---
+
+Vamos usar ***Volumes***!
+
+---
+
+Volumes são pastas do sistema hospedeiro que "conectamos" (montamos) ao sistema de arquivo do container, dessa forma quando ele escrever nessas pastas ele estará escrevendo no sistema de arquivos da máquina hospedeira.
+
+---
+
+*Talk is cheap, show me the code!*
+
+---
+
+Vamos criar outro container, dando um nome a ele (para facilitar nossa vida) e montando a pasta `~/Downloads/volume_do_ubuntu` da máquina hospedeira na pasta `/root` do container e repetir o nosso experimento
+
+---
+
+![](img/4.png)
+
+---
+
+![](img/5.png)
+
+---
+
+É isso que fazemos com containers de bancos de dados: os arquivos utilizados pelas aplicações de banco de dados são armazenados em volumes no sistema hospedeiro.
 
 ---
 
