@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.1.0.6-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-for-html/bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:compat="http://www.yworks.com/xml/yfiles-compat-arrows/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d1" for="node" attr.type="string" attr.name="url"/>
+	<key id="d2" for="node" attr.type="string" attr.name="description"/>
+	<key id="d3" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d4" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d5" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d6" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d7" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d8" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d10" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d11" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d12" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d13" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d14" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d15" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d16" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d18" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d18">
+		<y:SharedData>
+			<yjs:Font x:Key="1" fontSize="12"/>
+			<demostyle:DemoGroupStyle x:Key="2" isCollapsible="true" borderColor="#68B0E3" folderFrontColor="#68B0E3" folderBackColor="#3C679B"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="3" LayoutRatio="0.5,1" LabelRatio="0.5,0">
+				<y:RatioAnchoredLabelModelParameter.Model>
+					<y:FreeNodeLabelModel/>
+				</y:RatioAnchoredLabelModelParameter.Model>
+			</y:RatioAnchoredLabelModelParameter>
+			<yjs:Stroke x:Key="4" fill="{y:GraphMLReference 5}"/>
+			<yjs:SolidColorFill x:Key="5" color="DarkOrange"/>
+			<yjs:DefaultLabelStyle x:Key="6" font="{y:GraphMLReference 1}" textFill="BLACK"/>
+			<yjs:Stroke x:Key="7" fill="{y:GraphMLReference 8}"/>
+			<yjs:SolidColorFill x:Key="8" color="#FF336699"/>
+			<yjs:Arrow x:Key="9" type="TRIANGLE" scale="0.75" stroke="{y:GraphMLReference 7}" fill="{y:GraphMLReference 8}" cropLength="1"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="10" LayoutRatio="0.5,1" LabelRatio="0.5,0">
+				<y:RatioAnchoredLabelModelParameter.Model>
+					<y:FreeNodeLabelModel/>
+				</y:RatioAnchoredLabelModelParameter.Model>
+			</y:RatioAnchoredLabelModelParameter>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<node id="n0">
+			<data key="d3">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Ubuntu (vps)]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:InteriorStretchLabelModelParameter>
+								<y:InteriorStretchLabelModelParameter.Model>
+									<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+								</y:InteriorStretchLabelModelParameter.Model>
+							</y:InteriorStretchLabelModelParameter>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-166.75" Y="-401" Width="588.625" Height="607"/>
+			</data>
+			<data key="d6">
+				<y:GraphMLReference ResourceKey="2"/>
+			</data>
+			<graph id="n0:" edgedefault="directed">
+				<node id="n0::n0">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text><![CDATA[python:3.6-stretch modificado]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="3.5" Y="-190" Width="228" Height="150"/>
+					</data>
+					<data key="d6">
+						<y:GraphMLReference ResourceKey="2"/>
+					</data>
+					<graph id="n0::n0:" edgedefault="directed">
+						<node id="n0::n0::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 3}" Style="{y:GraphMLReference 6}">
+										<y:Label.Text>Django</y:Label.Text>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="96" Y="-112" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+							<port name="p2"/>
+							<port name="p3"/>
+						</node>
+						<node id="n0::n0::n1">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 3}">
+										<y:Label.Text>Celery</y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="174.5" Y="-158" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+						</node>
+						<node id="n0::n0::n2">
+							<data key="d3">
+								<x:List>
+									<y:Label Style="{y:GraphMLReference 6}">
+										<y:Label.Text>Redis</y:Label.Text>
+										<y:Label.LayoutParameter>
+											<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+												<y:RatioAnchoredLabelModelParameter.Model>
+													<y:FreeNodeLabelModel/>
+												</y:RatioAnchoredLabelModelParameter.Model>
+											</y:RatioAnchoredLabelModelParameter>
+										</y:Label.LayoutParameter>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="33.75" Y="-163" Width="40" Height="40"/>
+							</data>
+							<data key="d6">
+								<demostyle:AssetNodeStyle assetName="database.svg"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+						</node>
+						<edge id="n0::n0::e0" source="n0::n0::n0" target="n0::n0::n2" sourceport="p1" targetport="p1">
+							<data key="d12">
+								<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+									<yjs:PolylineEdgeStyle.sourceArrow>
+										<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+									</yjs:PolylineEdgeStyle.sourceArrow>
+								</yjs:PolylineEdgeStyle>
+							</data>
+						</edge>
+						<edge id="n0::n0::e1" source="n0::n0::n1" target="n0::n0::n2" sourceport="p0" targetport="p0">
+							<data key="d12">
+								<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+									<yjs:PolylineEdgeStyle.sourceArrow>
+										<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+									</yjs:PolylineEdgeStyle.sourceArrow>
+								</yjs:PolylineEdgeStyle>
+							</data>
+						</edge>
+						<edge id="n0::n0::e2" source="n0::n0::n0" target="n0::n0::n1" sourceport="p2" targetport="p1">
+							<data key="d12">
+								<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+									<yjs:PolylineEdgeStyle.sourceArrow>
+										<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+									</yjs:PolylineEdgeStyle.sourceArrow>
+								</yjs:PolylineEdgeStyle>
+							</data>
+						</edge>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.993421052631579"/>
+						</data>
+					</port>
+					<port name="p1">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.006578947368421073"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n1">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text>postgres:11-alpine</y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="278.5" Y="-185" Width="134" Height="134"/>
+					</data>
+					<data key="d6">
+						<y:GraphMLReference ResourceKey="2"/>
+					</data>
+					<graph id="n0::n1:" edgedefault="directed">
+						<node id="n0::n1::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label Style="{y:GraphMLReference 6}">
+										<y:Label.Text>postgres</y:Label.Text>
+										<y:Label.LayoutParameter>
+											<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+												<y:RatioAnchoredLabelModelParameter.Model>
+													<y:FreeNodeLabelModel/>
+												</y:RatioAnchoredLabelModelParameter.Model>
+											</y:RatioAnchoredLabelModelParameter>
+										</y:Label.LayoutParameter>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="326.5" Y="-117" Width="40" Height="40"/>
+							</data>
+							<data key="d6">
+								<demostyle:AssetNodeStyle assetName="database.svg"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9926470588235294"/>
+						</data>
+					</port>
+					<port name="p1">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.007352941176470562"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n2">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text>nginx</y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="-139.6875" Y="-146" Width="104.6875" Height="90"/>
+					</data>
+					<data key="d6">
+						<y:GraphMLReference ResourceKey="2"/>
+					</data>
+					<graph id="n0::n2:" edgedefault="directed">
+						<node id="n0::n2::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label Style="{y:GraphMLReference 6}">
+										<y:Label.Text>nginx</y:Label.Text>
+										<y:Label.LayoutParameter>
+											<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+												<y:RatioAnchoredLabelModelParameter.Model>
+													<y:FreeNodeLabelModel/>
+												</y:RatioAnchoredLabelModelParameter.Model>
+											</y:RatioAnchoredLabelModelParameter>
+										</y:Label.LayoutParameter>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="-110.1875" Y="-112" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+							<port name="p2"/>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.011764705882352955"/>
+						</data>
+					</port>
+					<port name="p1">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.011764705882352955"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n3">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text><![CDATA[volume nginx]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="-157.75" Y="47" Width="140.75" Height="150"/>
+					</data>
+					<data key="d6">
+						<demostyle:DemoGroupStyle isCollapsible="true" borderColor="#e36868" folderFrontColor="#e36868" folderBackColor="#e36868"/>
+					</data>
+					<data key="d7">
+						<y:ViewState>
+							<y:FolderNodeState x:Key="c|view" Layout="-165.5,59,159,150" Style="{y:GraphMLReference 2}"/>
+						</y:ViewState>
+					</data>
+					<graph id="n0::n3:" edgedefault="directed">
+						<node id="n0::n3::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}" Style="{y:GraphMLReference 6}">
+										<y:Label.Text><![CDATA[Arquivos Estáticos]]></y:Label.Text>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="-101" Y="74" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+						<node id="n0::n3::n1">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text><![CDATA[Aplicação Web (React)]]></y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="-101" Y="137" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d17">
+							<y:ViewState>
+								<y:Port x:Key="c|view"/>
+							</y:ViewState>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n4">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text><![CDATA[volume python]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="3.5" Y="47" Width="228" Height="141"/>
+					</data>
+					<data key="d6">
+						<demostyle:DemoGroupStyle isCollapsible="true" borderColor="#e36868" folderFrontColor="#e36868" folderBackColor="#e36868"/>
+					</data>
+					<graph id="n0::n4:" edgedefault="directed">
+						<node id="n0::n4::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text><![CDATA[Arquivos Redis]]></y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="33.75" Y="79" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+						<node id="n0::n4::n1">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text>Logs</y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="158.9375" Y="79" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+						<node id="n0::n4::n2">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text>Codigo-fonte</y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="96.34375" Y="129" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.006993006993006978"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n5">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text><![CDATA[volume postgres]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="280.125" Y="47" Width="132.75" Height="117"/>
+					</data>
+					<data key="d6">
+						<demostyle:DemoGroupStyle isCollapsible="true" borderColor="#e36868" folderFrontColor="#e36868" folderBackColor="#e36868"/>
+					</data>
+					<graph id="n0::n5:" edgedefault="directed">
+						<node id="n0::n5::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text><![CDATA[Arquivos Postgres]]></y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="331.5" Y="96.5" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.00840336134453784"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n6">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text><![CDATA[volume compart.]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="59" Y="-374" Width="117" Height="104"/>
+					</data>
+					<data key="d6">
+						<demostyle:DemoGroupStyle isCollapsible="true" borderColor="#e36868" folderFrontColor="#e36868" folderBackColor="#e36868"/>
+					</data>
+					<graph id="n0::n6:" edgedefault="directed">
+						<node id="n0::n6::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label LayoutParameter="{y:GraphMLReference 10}">
+										<y:Label.Text><![CDATA[Arquivos de config]]></y:Label.Text>
+										<y:Label.Style>
+											<yjs:DefaultLabelStyle font="{y:GraphMLReference 1}" textFill="BLACK"/>
+										</y:Label.Style>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="103" Y="-339" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+						</node>
+					</graph>
+					<port name="p0">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9905660377358491"/>
+						</data>
+					</port>
+					<port name="p1">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9905660377358491"/>
+						</data>
+					</port>
+					<port name="p2">
+						<data key="d15">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9905660377358491"/>
+						</data>
+					</port>
+				</node>
+				<node id="n0::n7">
+					<data key="d3">
+						<x:List>
+							<y:Label>
+								<y:Label.Text>mailserver</y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:InteriorStretchLabelModelParameter>
+										<y:InteriorStretchLabelModelParameter.Model>
+											<y:InteriorStretchLabelModel Insets="4,4,18,4"/>
+										</y:InteriorStretchLabelModelParameter.Model>
+									</y:InteriorStretchLabelModelParameter>
+								</y:Label.LayoutParameter>
+								<y:Label.Style>
+									<yjs:DefaultLabelStyle wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 1}" textFill="WHITE"/>
+								</y:Label.Style>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d4">
+						<y:RectD X="-139.6875" Y="-339" Width="94" Height="90"/>
+					</data>
+					<data key="d6">
+						<y:GraphMLReference ResourceKey="2"/>
+					</data>
+					<graph id="n0::n7:" edgedefault="directed">
+						<node id="n0::n7::n0">
+							<data key="d3">
+								<x:List>
+									<y:Label Style="{y:GraphMLReference 6}">
+										<y:Label.Text><![CDATA[Mail server]]></y:Label.Text>
+										<y:Label.LayoutParameter>
+											<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+												<y:RatioAnchoredLabelModelParameter.Model>
+													<y:FreeNodeLabelModel/>
+												</y:RatioAnchoredLabelModelParameter.Model>
+											</y:RatioAnchoredLabelModelParameter>
+										</y:Label.LayoutParameter>
+									</y:Label>
+								</x:List>
+							</data>
+							<data key="d4">
+								<y:RectD X="-110.1875" Y="-302.5" Width="30" Height="30"/>
+							</data>
+							<data key="d6">
+								<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 5}"/>
+							</data>
+							<port name="p0"/>
+							<port name="p1"/>
+						</node>
+					</graph>
+				</node>
+				<edge id="n0::e0" source="n0::n0::n0" target="n0::n1::n0" sourceport="p0" targetport="p0">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e1" source="n0::n2::n0" target="n0::n0::n0" sourceport="p0" targetport="p3">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FF336699">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="#FF336699" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="#FF336699" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e2" source="n0::n2" target="n0::n3" sourceport="p0" targetport="p0">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e3" source="n0::n4" target="n0::n0" sourceport="p0" targetport="p0">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e4" source="n0::n1" target="n0::n5" sourceport="p0" targetport="p0">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e5" source="n0::n6" target="n0::n2" sourceport="p0" targetport="p1">
+					<data key="d11">
+						<x:List>
+							<y:Bend Location="117.5,-217"/>
+							<y:Bend Location="-32.375,-217"/>
+						</x:List>
+					</data>
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e6" source="n0::n6" target="n0::n0" sourceport="p1" targetport="p1">
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e7" source="n0::n6" target="n0::n1" sourceport="p2" targetport="p1">
+					<data key="d11">
+						<x:List>
+							<y:Bend Location="117.5,-217"/>
+							<y:Bend Location="117.5,-217"/>
+							<y:Bend Location="345.5,-216.5"/>
+						</x:List>
+					</data>
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="#FFFF0000">
+							<yjs:PolylineEdgeStyle.targetArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.targetArrow>
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFFF0000" fill="#FFFF0000" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e8" source="n0::n2::n0" target="n0::n7::n0" sourceport="p2" targetport="p0">
+					<data key="d11">
+						<x:List>
+							<y:Bend Location="-95.1875,-180.5"/>
+							<y:Bend Location="-150.125,-180.5"/>
+							<y:Bend Location="-150.125,-287.5"/>
+						</x:List>
+					</data>
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+				<edge id="n0::e9" source="n0::n7::n0" target="n0::n1::n0" sourceport="p1" targetport="p1">
+					<data key="d11">
+						<x:List>
+							<y:Bend Location="-1.375,-287.5"/>
+							<y:Bend Location="-1.375,-235.42982553599995"/>
+							<y:Bend Location="276.625,-235.42982553599995"/>
+						</x:List>
+					</data>
+					<data key="d12">
+						<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 7}" targetArrow="{y:GraphMLReference 9}">
+							<yjs:PolylineEdgeStyle.sourceArrow>
+								<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF336699" fill="{y:GraphMLReference 8}" cropLength="1"/>
+							</yjs:PolylineEdgeStyle.sourceArrow>
+						</yjs:PolylineEdgeStyle>
+					</data>
+				</edge>
+			</graph>
+		</node>
+		<node id="n1">
+			<data key="d4">
+				<y:RectD X="-276.875" Y="-289" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="usericon_male3.svg"/>
+			</data>
+		</node>
+		<node id="n2">
+			<data key="d4">
+				<y:RectD X="-443.5625" Y="-119.5" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="usericon_female1.svg"/>
+			</data>
+		</node>
+		<node id="n3">
+			<data key="d4">
+				<y:RectD X="-276.875" Y="25.5" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="usericon_female3.svg"/>
+			</data>
+		</node>
+		<node id="n4">
+			<data key="d4">
+				<y:RectD X="-276.875" Y="-239.25" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="flat-smartphone.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n5">
+			<data key="d4">
+				<y:RectD X="-397.75" Y="-117" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="flat-laptop.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n6">
+			<data key="d4">
+				<y:RectD X="-276.875" Y="-25.25" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="flat-workstation.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n7">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[The Interwebs]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 1}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-321" Y="-119.5" Width="128.25" Height="45"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="cloud" fill="#FFD2DEEE"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+			<port name="p6"/>
+		</node>
+		<node id="n8">
+			<data key="d3">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 6}">
+						<y:Label.Text>site1.com</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+								<y:RatioAnchoredLabelModelParameter.Model>
+									<y:FreeNodeLabelModel/>
+								</y:RatioAnchoredLabelModelParameter.Model>
+							</y:RatioAnchoredLabelModelParameter>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-425.125" Y="-41.625" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="server.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n9">
+			<data key="d3">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 6}">
+						<y:Label.Text>api2.com</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+								<y:RatioAnchoredLabelModelParameter.Model>
+									<y:FreeNodeLabelModel/>
+								</y:RatioAnchoredLabelModelParameter.Model>
+							</y:RatioAnchoredLabelModelParameter>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-425.125" Y="12.375" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="server.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n10">
+			<data key="d3">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 6}">
+						<y:Label.Text>rede.social</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutRatio="0.5,1" LabelRatio="0.5,0">
+								<y:RatioAnchoredLabelModelParameter.Model>
+									<y:FreeNodeLabelModel/>
+								</y:RatioAnchoredLabelModelParameter.Model>
+							</y:RatioAnchoredLabelModelParameter>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-425.125" Y="74" Width="40" Height="40"/>
+			</data>
+			<data key="d6">
+				<demostyle:AssetNodeStyle assetName="server.svg"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<edge id="e0" source="n4" target="n7" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e1" source="n5" target="n7" sourceport="p0" targetport="p1">
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e2" source="n6" target="n7" sourceport="p0" targetport="p2">
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e3" source="n7" target="n0::n2::n0" sourceport="p3" targetport="p1">
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e4" source="n8" target="n7" sourceport="p0" targetport="p4">
+			<data key="d11">
+				<x:List>
+					<y:Bend Location="-331,-21.625"/>
+				</x:List>
+			</data>
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e5" source="n9" target="n7" sourceport="p0" targetport="p5">
+			<data key="d11">
+				<x:List>
+					<y:Bend Location="-331,32.375"/>
+				</x:List>
+			</data>
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e6" source="n10" target="n7" sourceport="p0" targetport="p6">
+			<data key="d11">
+				<x:List>
+					<y:Bend Location="-334.6445745954701,94"/>
+				</x:List>
+			</data>
+			<data key="d12">
+				<yjs:PolylineEdgeStyle stroke="#FFE600FF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FFE600FF" fill="#FFE600FF" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+	</graph>
+</graphml>

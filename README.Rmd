@@ -9,6 +9,10 @@ output:
     fonttheme: "structurebold"
 ---
 
+# `TL;DR`
+
+TODO: Fazer o TLDR
+
 # O problema
 
 A pessoa $A$ desenvolveu um *pipeline* de *Machile Leearning* em Python no seu computador pessoal.
@@ -250,10 +254,73 @@ Vamos criar outro container, dando um nome a ele (para facilitar nossa vida) e m
 
 É isso que fazemos com containers de bancos de dados: os arquivos utilizados pelas aplicações de banco de dados são armazenados em volumes no sistema hospedeiro.
 
+# Networks
+
+Containers participam de uma rede só deles
+
 ---
 
-![](img/containers.jpg)
+Para que outros sistemas consigam se comunicar com eles é necessário conectar portas dos containers a portas da máquina hospedeira (isso ficará mais claro à frente)
 
 ---
 
-teste
+Você pode estar pensando:
+
+> Solucionamos um problema criando outro: toda vez que eu for rodar minhas aplicações terei que digitar dezenas de linhas de comandos para "subir" e "descer" os containers
+
+---
+
+Chamamos o gerenciamento de containers de **orquestração**
+
+# As soluções de orquestração de containers
+
+* *Docker Compose*
+* *Docker Swarm*
+* *Kubernetes*
+
+---
+
+Chega de bla bla bla, vamos a um exemplo: o servidor de `luizsol.com`
+
+---
+
+# Topologia `luizsol.com`
+
+---
+
+![](img/blog.jpg)
+
+---
+
+Toda essa arquitetura de rede pode ser reproduzida em menos de 2 minutos por qualquer pessoa em qualquer sistema que tenha *Docker* instalado e acesso à internet com o comando:
+
+```bash
+docker-compose up
+```
+
+---
+
+Falar sobre o web scrapping que roda no luizsol.com
+
+---
+
+E todos os arquivos necessários para isso são arquivos de texto que estão armazenados e versionados em um repositório
+
+![](img/repo.png)
+
+# Concluindo
+
+* *Docker* é uma plataforma que oferece alta simplicidade, flexibilidade e reproducibilidade de ambientes de aplicações
+* Vantages:
+  * Baixo *overhead*
+  * Demanda pouco espaço no disco e na memória
+  * Toda o controle e configuração é feita via arquivos de texto, viabilizando versionamento
+  * *Industry Standard*
+  * Transforma um sistema de várias partes complexas em uma solução *plug-and-play*
+* Desvantagens:
+  * Não é trivial de se aprender
+  * Exige algum nível de conhecimeto do ambiente Linux (na maioria dos casos)
+  * A fase inicial de configuração pode ser sofrida
+
+
+TODO: explicar utilidade em ML e Data Sciences
