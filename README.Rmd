@@ -9,10 +9,6 @@ output:
     fonttheme: "structurebold"
 ---
 
-# `TL;DR`
-
-TODO: Fazer o TLDR
-
 # O problema
 
 A pessoa $A$ desenvolveu um *pipeline* de *Machile Leearning* em Python no seu computador pessoal.
@@ -23,6 +19,7 @@ O *setup* da pessoa $A$ é:
 
 * Majaro 17.1 (Arch Linux)
 * Python 3.5
+
 * PostgreSQL 10.3 (Banco de Dados)
 * PyTorch 0.9
 * Pandas 0.14
@@ -264,9 +261,7 @@ Para que outros sistemas consigam se comunicar com eles é necessário conectar 
 
 ---
 
-Você pode estar pensando:
-
-> Solucionamos um problema criando outro: toda vez que eu for rodar minhas aplicações terei que digitar dezenas de linhas de comandos para "subir" e "descer" os containers
+Você pode estar pensando: Solucionamos um problema criando outro: toda vez que eu for rodar minhas aplicações terei que digitar dezenas de linhas de comandos para "subir" e "descer" os containers
 
 ---
 
@@ -288,7 +283,7 @@ Chega de bla bla bla, vamos a um exemplo: o servidor de `luizsol.com`
 
 ---
 
-![](img/blog.jpg)
+![](img/blog.png)
 
 ---
 
@@ -297,10 +292,6 @@ Toda essa arquitetura de rede pode ser reproduzida em menos de 2 minutos por qua
 ```bash
 docker-compose up
 ```
-
----
-
-Falar sobre o web scrapping que roda no luizsol.com
 
 ---
 
@@ -321,6 +312,3 @@ E todos os arquivos necessários para isso são arquivos de texto que estão arm
   * Não é trivial de se aprender
   * Exige algum nível de conhecimeto do ambiente Linux (na maioria dos casos)
   * A fase inicial de configuração pode ser sofrida
-
-
-TODO: explicar utilidade em ML e Data Sciences
