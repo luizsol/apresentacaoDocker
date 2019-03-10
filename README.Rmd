@@ -1,5 +1,5 @@
 ---
-title: "*Docker*: o que é e para que serve"
+title: "[*Docker*](https://www.docker.com/): o que é e para que serve"
 author: Luiz Sol e Marcos Vinicius
 date: 2019-03-11
 output:
@@ -11,18 +11,18 @@ output:
 
 # O problema
 
-A pessoa $A$ desenvolveu um *pipeline* de *Machile Leearning* em Python no seu computador pessoal.
+A pessoa $A$ desenvolveu um *pipeline* de [*Machile Learning*](https://pt.wikipedia.org/wiki/Aprendizado_de_m%C3%A1quina) em [*Python*](https://www.python.org/) no seu computador pessoal.
 
 ---
 
 O *setup* da pessoa $A$ é:
 
-* Majaro 17.1 (Arch Linux)
-* Python 3.5
+* [*Majaro*](https://manjaro.org/) 17.1 (Arch Linux)
+* [*Python*](https://www.python.org/) 3.5
 
-* PostgreSQL 10.3 (Banco de Dados)
-* PyTorch 0.9
-* Pandas 0.14
+* [*PostgreSQL*](https://www.postgresql.org/) 10.3 (Banco de Dados)
+* [*PyTorch*](https://pytorch.org/) 0.9
+* [*Pandas*](https://pandas.pydata.org/) 0.14
 
 ---
 
@@ -32,11 +32,11 @@ Agora a pessoa $B$ precisa revisar o código (ver se foi bem escrito e se funcio
 
 O *setup* da pessoa $B$ é:
 
-* Windows 10
-* Python 3.7
-* MySQL 5.7 (Banco de Dados)
-* TensorFlow 0.9
-* Pandas 0.21
+* [*Windows*](https://www.microsoft.com/pt-br/windows) 10
+* [*Python*](https://www.python.org/) 3.7
+* [*MySQL*](https://www.mysql.com/) 5.7 (Banco de Dados)
+* [*TensorFlow*](https://www.tensorflow.org/) 0.9
+* [*Pandas*](https://pandas.pydata.org/) 0.21
 
 ---
 
@@ -46,15 +46,15 @@ E uma vez que o código for aprovado ele deverá ser colocado no servidor de pro
 
 O *setup* do servidor $C$ é:
 
-* RHEL 7.6 (Red Hat Linux)
-* Python 3.6
-* Cassandra 3.11 (Banco de Dados)
-* TensorFlow 0.7
-* Pandas 0.26
+* [*RHEL*](https://www.redhat.com/pt-br) 7.6 (Red Hat Linux)
+* [*Python*](https://www.python.org/) 3.6
+* [*Cassandra*](http://cassandra.apache.org/) 3.11 (Banco de Dados)
+* [*TensorFlow*](https://www.tensorflow.org/) 0.7
+* [*Pandas*](https://pandas.pydata.org/) 0.26
 
 ---
 
-O Pesquisador $D$ está tentando comparar a diferença de performance entre duas versões diferentes da JVM (Java), mas não quer ter que desinstalar e instalar cada versão para cada teste que precisar realizar.
+O Pesquisador $D$ está tentando comparar a diferença de performance entre duas versões diferentes da [*JVM*](https://pt.wikipedia.org/wiki/M%C3%A1quina_virtual_Java) ([*Java*](https://www.java.com/pt_BR/)), mas não quer ter que desinstalar e instalar cada versão para cada teste que precisar realizar.
 
 ---
 
@@ -80,28 +80,28 @@ Temos um problema de reproducibilidade e isolamento de ambientes de execução.
   * Versionamento (controle de versões) de máquinas virtuais não é uma tarefa simples (arquivos binários)
   * A interação entre a máquina hopedeira e a máquina hóspede (máquina virtualizada) nem sempre é simples (arquivos, rede, *clipboard* etc)
 
-# **Docker** ao resgate
+# [**Docker**](https://www.docker.com/) ao resgate
 
-O *Docker* tenta solucionar este problema criando "máquinas virtuais" compactas, flexíveis e reutilizáveis.
+O [*Docker*](https://www.docker.com/) tenta solucionar este problema criando "máquinas virtuais" compactas, flexíveis e reutilizáveis.
 
 ---
 
-O *Docker* utiliza o próprio *kernel* (a "base") do sistema operacional para executar as aplicações das máquinas virtualizadas.
+O [*Docker*](https://www.docker.com/) utiliza o próprio [*kernel*](https://pt.wikipedia.org/wiki/N%C3%BAcleo_(sistema_operacional)) (a "base") do sistema operacional para executar as aplicações das máquinas virtualizadas.
 
 ![](img/vmvsdocker.jpg)
 
 ---
 
-Os pricipais conceitos do *Docker* são:
+Os pricipais conceitos do [*Docker*](https://www.docker.com/) são:
 
-* **Imagens**: instruções de como construir os containers
-* ***Containers***: as "máquinas virtuais" já construídas a partir dos containers
-* **Volumes**: pastas no computador hospedeiro que o container irá utilizar para armazenar arquivos permanentemente
-* **Redes**: as sub-redes das quais os containers farão parte
+* [**Imagens**](https://docs.docker.com/engine/reference/commandline/images/): instruções de como construir os containers
+* [***Containers***](https://www.docker.com/resources/what-container): as "máquinas virtuais" já construídas a partir dos containers
+* [**Volumes**](https://docs.docker.com/storage/volumes/): pastas no computador hospedeiro que o container irá utilizar para armazenar arquivos permanentemente
+* [**Redes**](https://docs.docker.com/v17.09/engine/userguide/networking/): as sub-redes das quais os containers farão parte
 
 ---
 
-# Imagens
+# [Imagens](https://docs.docker.com/engine/reference/commandline/images/)
 
 São as "plantas" que serão utilizadas para construir os *containers*
 
@@ -129,15 +129,15 @@ São contruídas a partir de outras imagens que estão disponíveis no repositó
 
 ---
 
-Ex: Se eu quiser construir uma imagem para um continer Linux que irá fazer *webscrapping* utilizando Celery eu posso criar a imagem:
+Ex: Se eu quiser construir uma imagem para um continer [*Linux*](https://pt.wikipedia.org/wiki/Linux) que irá fazer [*web scrapping*](https://en.wikipedia.org/wiki/Web_scraping) utilizando [*Celery*](http://www.celeryproject.org/) eu posso criar a imagem:
 
-* A partir da imagem de um Linux puro (Alpine, Ubuntu etc)
-* A partir da imagem oficial do Python (que por sua vez foi criada a partir da imagem de um Linux puro)
-* A partir de uma imagem que já tenha Celery instalado e configurado
+* A partir da imagem de um [*Linux*](https://pt.wikipedia.org/wiki/Linux) puro ([*Alpine*](https://alpinelinux.org/), [*Ubuntu*](https://www.ubuntu.com/) etc)
+* A partir da imagem oficial do [*Python*](https://www.python.org/) (que por sua vez foi criada a partir da imagem de um [*Linux*](https://pt.wikipedia.org/wiki/Linux) puro)
+* A partir de uma imagem que já tenha [*Celery*](http://www.celeryproject.org/) instalado e configurado
 
 ---
 
-Trechos do `Dockerfile` do *MySQL*
+Trechos do [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) do [*MySQL*](https://www.mysql.com/)
 
 ---
 
@@ -162,7 +162,7 @@ Fonte: [MySQL Docker File](https://github.com/docker-library/mysql/blob/a7a737f1
 
 ---
 
-Esses comandos serão executados toda vez que um novo container de MySQL for construído.
+Esses comandos serão executados toda vez que um novo container de [*MySQL*](https://www.mysql.com/) for construído.
 
 ---
 
@@ -170,23 +170,23 @@ Observações importante: **o sistema de arquivo dos *containers* é volátil!**
 
 (Isso ficará mais claro quando falarmos sobre volumes)
 
-# *Containers*
+# [*Containers*](https://www.docker.com/resources/what-container)
 
-*Containers* são instâncias de imagens.
-
----
-
-* Um *container* é gerado a partir de uma imagem
-* Um hospedeiro pode executar vários *containers* simultaneamente
+[*Containers*](https://www.docker.com/resources/what-container) são instâncias de imagens.
 
 ---
 
-Analogia: a imagem é o molde e os *containers* são os objetos criados a partir desse molde
+* Um [*container*](https://www.docker.com/resources/what-container) é gerado a partir de uma imagem
+* Um hospedeiro pode executar vários [*containers*](https://www.docker.com/resources/what-container) simultaneamente
+
+---
+
+Analogia: a imagem é o molde e os [*containers*](https://www.docker.com/resources/what-container) são os objetos criados a partir desse molde
 
 
-# Volumes
+# [*Volumes*](https://docs.docker.com/storage/volumes/)
 
-Lembram-se que o sistemas de arquivos das *imagens* são efêmeros?
+Lembram-se que o sistemas de arquivos das [imagens](https://docs.docker.com/engine/reference/commandline/images/) são efêmeros?
 
 ---
 
@@ -194,19 +194,19 @@ Vamos fazer um teste.
 
 ---
 
-Vamos criar uma instância (*container*) a partir da imagem oficial do *Ubuntu*:
+Vamos criar uma instância ([*container*](https://www.docker.com/resources/what-container)) a partir da imagem oficial do [*Ubuntu*](https://hub.docker.com/_/ubuntu):
 
 ![](img/1.png)
 
 ---
 
-Agora que o *container* está rodando vamos acessar o container, criar um arquivo o arquivo `/root/file.txt` e depois parar o container.
+Agora que o [*container*](https://www.docker.com/resources/what-container) está rodando vamos acessar o container, criar um arquivo o arquivo `/root/file.txt` e depois parar o container.
 
 ![](img/2.png)
 
 ---
 
-Reiniciando o *container*, acessando-o e procurando pelo arquivo temos uma surpresa:
+Reiniciando o [*container*](https://www.docker.com/resources/what-container), acessando-o e procurando pelo arquivo temos uma surpresa:
 
 ![](img/3.png)
 
@@ -225,7 +225,7 @@ Não.
 
 ---
 
-Vamos usar ***Volumes***!
+Vamos usar [***Volumes***](https://docs.docker.com/storage/volumes/)!
 
 ---
 
@@ -265,21 +265,31 @@ Você pode estar pensando: Solucionamos um problema criando outro: toda vez que 
 
 ---
 
-Chamamos o gerenciamento de containers de **orquestração**
+Chamamos o gerenciamento de containers de [**orquestração**](https://www.docker.com/products/orchestration)
 
 # As soluções de orquestração de containers
 
-* *Docker Compose*
-* *Docker Swarm*
-* *Kubernetes*
+* [*Docker Compose*](https://docs.docker.com/compose/)
+* [*Docker Swarm*](https://docs.docker.com/engine/swarm/)
+* [*Kubernetes*](https://kubernetes.io/)
 
 ---
 
-Chega de bla bla bla, vamos a um exemplo: o servidor de `luizsol.com`
+Chega de bla bla bla, vamos a um exemplo: o servidor de [`luizsol.com`](http://luizsol.com/)
 
 ---
 
-# Topologia `luizsol.com`
+# Topologia [`luizsol.com`](http://luizsol.com/)
+
+---
+
+## Mas antes, vamos dar o nome aos bois:
+
+* [*Nginx*](http://nginx.org/): servidor [*proxy*](https://whatis.techtarget.com/definition/proxy-server) ("porteiro" das requisições web, lida com *caching*, *timeout* etc)
+* [*Django*](https://www.djangoproject.com/): [*framework web*](https://pt.wikipedia.org/wiki/Framework_para_aplica%C3%A7%C3%B5es_web) em [*Python*](https://www.python.org/) (implementa sites, [*API*](https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/)s etc)
+* [*Celery*](http://www.celeryproject.org/): [*framework*](https://pt.wikipedia.org/wiki/Framework) em [*Python*](https://www.python.org/) de gestão de [*tasks*](http://docs.celeryproject.org/en/latest/userguide/tasks.html) (execução automática ou periódica de funções, ex: [*Web Scraping*](https://en.wikipedia.org/wiki/Web_scraping), monitoramento, geração de relatórios etc)
+* [*PostgreSQL*](https://www.postgresql.org/): banco de dados relacional [*SQL*](https://pt.wikipedia.org/wiki/SQL) utilizado para persistência de várias aplicações
+* [*Redis*](https://redis.io/): banco de dados [*NoSQL*](https://aws.amazon.com/pt/nosql/) de armazenamento em *RAM* do tipo chave-valor (super rápido, usado pelo [*Celery*](http://www.celeryproject.org/) para despache de [*tasks*](http://docs.celeryproject.org/en/latest/userguide/tasks.html))
 
 ---
 
@@ -287,7 +297,7 @@ Chega de bla bla bla, vamos a um exemplo: o servidor de `luizsol.com`
 
 ---
 
-Toda essa arquitetura de rede pode ser reproduzida em menos de 2 minutos por qualquer pessoa em qualquer sistema que tenha *Docker* instalado e acesso à internet com o comando:
+Toda essa arquitetura de rede pode ser reproduzida em menos de 2 minutos por qualquer pessoa em qualquer sistema que tenha [*Docker*](https://www.docker.com/) instalado e acesso à internet com o comando:
 
 ```bash
 docker-compose up
@@ -301,11 +311,11 @@ E todos os arquivos necessários para isso são arquivos de texto que estão arm
 
 # Concluindo
 
-* *Docker* é uma plataforma que oferece alta simplicidade, flexibilidade e reproducibilidade de ambientes de aplicações
+* [*Docker*](https://www.docker.com/) é uma plataforma que oferece alta simplicidade, flexibilidade e reproducibilidade de ambientes de aplicações
 * Vantages:
-  * Baixo *overhead*
-  * Demanda pouco espaço no disco e na memória
-  * Toda o controle e configuração é feita via arquivos de texto, viabilizando versionamento
+  * Baixo [*overhead*](https://pt.stackoverflow.com/questions/198252/o-que-%C3%A9-overhead)
+  * Demanda menos espaço no disco e na memória
+  * Toda o controle e configuração é feita via arquivos de texto, viabilizando [versionamento](https://pt.wikipedia.org/wiki/Sistema_de_controle_de_vers%C3%B5es)
   * *Industry Standard*
   * Transforma um sistema de várias partes complexas em uma solução *plug-and-play*
 * Desvantagens:
